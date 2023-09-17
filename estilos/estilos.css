@@ -2,7 +2,7 @@
 
 /* 
     paletas de cores 
-    verde: #49e09d
+    verde: #49a09d
     lilas: #5f2c82
 */
 
@@ -30,16 +30,15 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
-    height: 500px;
+    height: 515px;
     width: 250px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.457);
-
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 #imagem {
@@ -54,4 +53,91 @@ main {
 #formulario {
     padding: 10px;
     display: block;
+}
+
+#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#formulario > p {
+    font-size: 0.8em;
+    margin: 5px 0px;
+}
+
+.campo {
+    background-color: #5f2c82;
+    border: 2px solid #5f2c82;
+    display: block;
+    width: 99%;
+    height: 42px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+.campo > i {
+    color: white;
+    
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+.campo > input {
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px);
+}
+
+.campo > input:focus-within {
+    background-color: #ffff;
+    border: none;
+}
+
+.submit {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color: #ffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #2d6462;
+}
+
+.botao {
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  padding-top: 5px;
+  margin-top: 5px;
+  background-color: #ffff;
+  color: #2d6462;
+  border: 1px solid #49a09d;  
+  border-radius: 7px;
+  text-decoration: none;
+}
+
+.botao:hover {
+    background-color: #6cd3cf;
+}
+
+.botao > i {
+    font-size: 0.8em;
 }
